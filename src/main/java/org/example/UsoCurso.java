@@ -27,8 +27,12 @@ public class UsoCurso {
                 Estudiante estudiante1 = new Estudiante("Juan", 20);
                 Estudiante estudiante2 = new Estudiante("María", 22);
 
+                //cuando pongo un dato de otro tipo que no se pida en la clase me salta un error de tipos incompatibles
+
                 // Crear un curso con estudiantes
                 Curso curso = new Curso("Programación en Java", Arrays.asList(estudiante1, estudiante2));
+
+                //igual ocurre aquí, ya que se debe insertar un String, y un objeto estudiante correctamente
 
                 // Crear el contexto JAXB y el marshaller
                 JAXBContext context = JAXBContext.newInstance(Curso.class);
